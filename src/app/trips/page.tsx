@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
 import dynamic from 'next/dynamic'
 
-const TripMap = dynamic(() => import('@/components/ui/Tripmap'), { ssr: false })
+const TripMap = dynamic(() => import('@/components/ui/TripMap'), { ssr: false })
 
 interface Trip {
   id: string
